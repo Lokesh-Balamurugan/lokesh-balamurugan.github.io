@@ -194,23 +194,80 @@
 				color: #0056b3;
 			}
 		/* Media Queries */
+            /* iPhone 14 Pro */
+            @media (max-width: 430px) {
+                .profile-container img {
+                    width: 130px; /* Adjust size for iPhone 14 Pro */
+                }
+                .profile-container .text {
+                    margin-top: 15px; /* Adjust as needed */
+                    font-size: 0.8rem;
+                }
+                .aboutme-text {
+                    margin-top: 0px; /* Adjust as needed */
+                }
+            }
+
+            /* iPhone 13 */
+            @media (max-width: 390px) {
+                .profile-container img {
+                    width: 130px; /* Adjust size for iPhone 13 */
+                }
+                .profile-container .text {
+                    margin-top: 15px; /* Adjust as needed */
+                    font-size: 0.8rem;
+                }
+                .aboutme-text {
+                    margin-top: 0px; /* Adjust as needed */
+                }
+            }
+
+            /* iPhone SE (2020 and 2022 models) */
+            @media (max-width: 375px) {
+                .profile-container img {
+                    width: 120px; /* Adjust size for iPhone SE */
+                }
+                .profile-container .text {
+                    margin-top: 0px; /* Adjust as needed */
+                    font-size: 0.8rem;
+                }
+                .aboutme-text {
+                    margin-top: 0px; /* Adjust as needed */
+                }
+            }
+
+            /* iPhone 8 */
+            @media (max-width: 375px) {
+                .profile-container img {
+                    width: 120px; /* Adjust size for iPhone 8 */
+                }
+                .profile-container .text {
+                    margin-top: 0px; /* Adjust as needed */
+                    font-size: 0.8rem;
+                }
+                .aboutme-text {
+                    margin-top: 0px; /* Adjust as needed */
+                }
+            }
+
+            /* General mobile styles (for larger screens like iPhone 14 Pro Max and other devices) */
             @media (max-width: 768px) {
                 .profile-container img {
                     width: 150px; /* Adjust size for smaller screens */
                 }
-		.profile-container .text {
-		flex: 1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: justify;
-                margin-top: 15px; /* Move the text slightly down */
-		font-size: 0.8rem
-		}
-		.aboutme-text {
+                .profile-container .text {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: justify;
+                    margin-top: 15px; /* Move the text slightly down */
+                    font-size: 0.8rem;
+                }
+                .aboutme-text {
                     text-align: justify;
                     margin-top: 0px; /* Space below the image */
-	        }
+                }
             }
         </style>
     </head>
