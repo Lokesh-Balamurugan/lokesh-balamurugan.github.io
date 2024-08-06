@@ -12,25 +12,23 @@
         <style>
             .profile-container {
                 display: flex;
-                align-items: flex-start;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
                 margin-bottom: 20px;
                 text-align: justify;
             }
             .profile-container img {
                 width: 150px; /* Adjust the size as needed */
-                margin-right: 20px; /* Adjust the spacing as needed */
+                margin-bottom: 20px; /* Adjust the spacing as needed */
             }
             .profile-container .text {
-                flex: 1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                margin-top: 20px; /* Space below the image */
                 text-align: justify;
-                margin-top: 20px; /* Move the text slightly down */
             }
             .aboutme-text {
                 text-align: justify;
-                margin-top: 20px; /* Space below the image */
+                margin-top: 0px; /* Space below the Yoda text */
             }
             .education-container {
                 margin-top: 20px;
@@ -193,40 +191,6 @@
 			.project a.read-more:hover {
 				color: #0056b3;
 			}
-		/* Media Queries */
-            /* Media Queries */
-            @media (max-width: 767px) {
-                .profile-container {
-                    flex-direction: column;
-                    align-items: center;
-                    text-align: center;
-                }
-                .profile-container img {
-                    width: 150px; /* Default size for larger mobile screens */
-                    margin-bottom: 20px; /* Adjust spacing as needed */
-                }
-                .profile-container .text {
-                    margin-top: 0px;
-                    font-size: 1rem;
-                }
-                .aboutme-text {
-                    text-align: justify;
-                    margin-top: 0px; /* Space below the image */
-                }
-                .profile-container .yoda-text {
-                    display: none;
-                }
-                .mobile-yoda-text {
-                    display: block;
-                    margin-bottom: 20px;
-                    text-align: justify;
-                }
-            }
-            @media (min-width: 768px) {
-                .mobile-yoda-text {
-                    display: none;
-                }
-            }
         </style>
     </head>
     <body class="is-preload">
@@ -265,11 +229,10 @@
                                 <h2 class="major">About Me</h2>
                                 <div class="profile-container">
                                     <img src="images/profile.jpg" alt="Profile Picture" />
-                                    <div class="text yoda-text">
+                                    <div class="text">
                                         <p>"<b>DO OR DO NOT, THERE IS NO TRY</b>," Master Yoda instructs a clouded young Luke Skywalker when he attempts to lift his X-wing fighter from the swamp, a philosophy that has guided me through my academic and professional journey, driving my passion and commitment all along.</p>
                                     </div>
                                 </div>
-                                <p class="mobile-yoda-text">"<b>DO OR DO NOT, THERE IS NO TRY</b>," Master Yoda instructs a clouded young Luke Skywalker when he attempts to lift his X-wing fighter from the swamp, a philosophy that has guided me through my academic and professional journey, driving my passion and commitment all along.</p>
                                 <div class="aboutme-text">
                                     <p>As an imminent graduate with a Master of Science degree in Information Systems from Northeastern University, I am continually honing my knowledge and expertise in data science, with a primary focus on data analysis, machine learning, deep learning, and AI. Proficient in Python and SQL, my role as a Junior Data Scientist at HarbourVest Partners involved conducting elaborate business and data analysis, helping me understand the profound impact of data on management-level decision-making processes. I have also engineered predictive models for most of my projects using a variety of algorithms and interesting use cases. Transforming complex data into actionable insights through sophisticated statistical strategies is something I am always comfortable doing and have proven to be good at.</p>
                                     <p>Driven by this desire to tackle complex challenges, I would love to leverage my expertise to further enhance corporate performance, all while continuously adapting to the evolving nuances of the data science domain. In all essence, I live by Yoda's words, embracing challenges head-on and striving to excel in this ever-dynamic world of data and science.</p>
