@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<!--
+    Dimension by HTML5 UP
+-->
+<html>
+    <head>
+        <title>Loki Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            .profile-container {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 20px;
+                text-align: justify;
+            }
+            .profile-container img {
+                width: 150px; /* Adjust the size as needed */
+                margin-right: 20px; /* Adjust the spacing as needed */
+            }
+            .profile-container .text {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: justify;
+                margin-top: 20px; /* Move the text slightly down */
+            }
+            .aboutme-text {
+                text-align: justify;
+                margin-top: 20px; /* Space below the image */
+            }
+            .education-container {
+                margin-top: 20px;
+            }
+            .education-item {
+                margin-bottom: 30px;
+            }
+            .education-item h3 {
+                margin: 0;
+                font-weight: normal;
+                color: #ffffffcb;
+            }
+            .education-item p {
+                margin: 5px 0;
+            }
+            .education-item .degree {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1rem;
+            }
+            .education-item .degree-title {
+                margin-right: 10px;
+            }
+            .education-item .cgpa {
+                font-size: 0.9rem;
+                color: #ffffffcb;
+            }
+            .education-item .cgpa-number {
+                color: #ffffffcb;
+                font-weight: bold;
+            }
+            .education-item .university {
+                font-weight: bold;
+                color: #ffffffcb;
+            }
+            .education-item .location {
+                font-size: 0.8rem;
+                font-weight: normal;
+                color: #ffffffad;
+            }
+            .education-item .relevant-coursework {
+                font-size: 1rem;
+                margin-top: 5px;
+                text-indent: -0.9em;
+                padding-left: 1em; /* Adjust to match the dash position */
+                text-align: justify;
+                color: #ffffffad;
+            }
+            .education-item .relevant-coursework:before {
+                content: "--";
+                padding-right: 5px;
+            }
+            .education-item hr {
+                border: 0;
+                border-top: 1px solid #ffffff;
+                height: 1px;
+                margin: 20px 0;
+            }
+            .work-container {
+                margin-top: 20px;
+            }
+            .work-item {
+                margin-bottom: 30px;
+            }
+            .work-item h3 {
+                margin: 0;
+                font-weight: normal;
+                color: #ffffffcb;
+            }
+            .work-item p {
+                margin: 5px 0;
+            }
+            .work-item .position {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1rem;
+            }
+            .work-item .position-title {
+                margin-right: 10px;
+                font-weight: bold;
+            }
+            .work-item .company {
+                font-weight: bold;
+                color: #ffffffcb;
+            }
+            .work-item .location {
+                font-size: 0.9rem;
+                font-weight: normal;
+                color: #ffffffad;
+            }
+            .work-item .description{
+                font-size: 1rem;
+                margin-top: 5px;
+				text-indent: -0.9em;
+                padding-left: 1em;
+                text-align: justify;
+                color: #ffffffad;
+            }
+			.work-item .skills {
+                font-size: 0.8rem;
+                margin-top: 5px;
+                text-align: justify;
+                color: #ffffffad;
+            }
+            .work-item .description:before, .work-item .skills:before {
+                content: "--";
+                padding-right: 5px;
+            }
+            .work-item .skills span {
+                display: inline-block;
+                margin: 2px;
+                padding: 5px 8px;
+                border-radius: 25px;
+                background-color: #ffffff20;
+            }
+            .work-item hr {
+                border: 0;
+                border-top: 1px solid #ffffff;
+                height: 1px;
+                margin: 20px 0;
+            }
+			.projects-container {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 20px;
+				justify-content: center;
+			}
+			.project {
+				width: calc(50% - 10px);
+				background: #1b1f22;
+				padding: 20px;
+				border-radius: 8px;
+				text-align: center;
+				margin-bottom: 20px;
+				position: relative;
+			}
+			.project img {
+				width: 100%;
+				height: 125px;
+				object-fit: cover;
+				border-radius: 8px;
+			}
+			.project h3 {
+				margin: 10px 0;
+				color: #ffffff;
+			}
+			.project p {
+				color: #ffffff;
+			}
+			.project a.read-more {
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+				color: #007bff;
+				text-decoration: none;
+				font-size: 0.9rem;
+			}
+			.project a.read-more:hover {
+				color: #0056b3;
+			}
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Header -->
+                    <header id="header">
+                        <div class="logo">
+                            <span class="icon fa-chart-bar"></span>
+                        </div>
+                        <div class="content">
+                            <div class="inner">
+                                <h1>Lokeshwaran <br /> Venugopal Balamurugan</h1>
+                                <p>Fueled by <b>Data</b>, inspired by <b>Science</b>, allured by <b>Analysis</b>, mastering <b>Machine Learning</b>, and celebrating <b>Cinema</b>.<br />
+                                Cut to the chase <b><a href="https://drive.google.com/file/d/1gNx02UCWIIxxU4lGQo_hc4ncIcWDwt8h/view?usp=share_link">HERE</a></b>.</p>
+                            </div>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="#aboutme">About Me</a></li>
+                                <li><a href="#work">Work</a></li>
+								<li><a href="#education">Education</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+
+                <!-- Main -->
+                    <div id="main">
+
+                        <!-- About Me -->
+                            <article id="aboutme">
+                                <h2 class="major">About Me</h2>
+                                <div class="profile-container">
+                                    <img src="images/profile.jpg" alt="Profile Picture" />
+                                    <div class="text">
+                                        <p>"<b>DO OR DO NOT, THERE IS NO TRY</b>," Master Yoda instructs a clouded young Luke Skywalker when he attempts to lift his X-wing fighter from the swamp, a philosophy that has guided me through my academic and professional journey, driving my passion and commitment all along.</p>
+                                    </div>
+                                </div>
+                                <div class="aboutme-text">
+                                    <p>As an imminent graduate with a Master of Science degree in Information Systems from Northeastern University, I am continually honing my knowledge and expertise in data science, with a primary focus on data analysis, machine learning, deep learning, and AI. Proficient in Python and SQL, my role as a Junior Data Scientist at HarbourVest Partners involved conducting elaborate business and data analysis, helping me understand the profound impact of data on management-level decision-making processes. I have also engineered predictive models for most of my projects using a variety of algorithms and interesting use cases. Transforming complex data into actionable insights through sophisticated statistical strategies is something I am always comfortable doing and have proven to be good at.</p>
+                                    <p>Driven by this desire to tackle complex challenges, I would love to leverage my expertise to further enhance corporate performance, all while continuously adapting to the evolving nuances of the data science domain. In all essence, I live by Yoda's words, embracing challenges head-on and striving to excel in this ever-dynamic world of data and science.</p>
+                                    <p>Aside from this, cinema serves as another beating heart for me. It's often the only thing I ponder over and write about, sharing my thoughts, reviews, and analyses on my <b><a href="https://letterboxd.com/lastskywalk3r">Letterboxd</a></b> and Instagram pages. This passion for cinema hugely influences and enhances my capability to perform detailed data analysis, as I love getting under the skin of films and thus uncovering their essence, much like I enjoy doing with data.</p>
+                                </div>
+                            </article>
+
+						<!-- Work -->
+                        <article id="work">
+                            <h2 class="major">Work</h2>
+                            <div class="work-container">
+                                <div class="work-item">
+                                    <h3>January 2024 - July 2024</h3>
+                                    <div class="position">
+                                        <span class="position-title">Junior Data Scientist</span>
+                                    </div>
+                                    <p><span class="company">HarbourVest Partners</span> <span class="location">Boston, MA</span></p>
+									<p class="description">Data Integration and Visualization: Extracted client request data from a proprietary platform and Azure Data Studio, integrating it into PowerBI dashboards to provide comprehensive analysis. This supported the client service team in making strategic, data-driven decisions.<br></p>
+                                    <p class="description">Advanced Data Analysis: Conducted thorough analyses using statistical methods on complex client datasets, translating intricate data into actionable insights. Empowered internal stakeholders, including managing directors and senior vice presidents, to make well-informed decisions based on robust data evidence.<br></p>
+                                    <p class="description">Machine Learning Development: Developed machine learning models to classify incoming emails as financial or non-financial crimes, significantly reducing manual tagging time and increasing operational efficiency. Ensured model transparency to maintain operational trust and compliance.<br></p>
+									<p class="description">Continuous Improvement: Enhanced the client service team's analytical capabilities through ongoing data projects, focusing on expanding AI/ML initiatives to improve analysis of client datasets and drive innovative solutions.</p>
+									<p class="skills">Skills : <span>Python</span> <span>SQL</span> <span>Exploratory Data Analysis</span> <span>Business Analysis</span> <span>Machine Learning</span> <span>Azure DevOps</span> <span>Azure Data Studio</span> <span>AzureML</span> <span>Git</span> <span>Panel</span> <span>HvPlot</span> <span>NumPy</span> <span>Pandas</span> <span>seaborn</span> <span>matplotlib</span> <span>Project Management</span> </p> 
+                                </div>
+                                <hr>
+                                <div class="work-item">
+                                    <h3>July 2021 - August 2021</h3>
+                                    <div class="position">
+                                        <span class="position-title">Data Scientist and Business Analytics Intern</span>
+                                    </div>
+                                    <p><span class="company">The Sparks Foundation</span> <span class="location">Remote</span></p>
+                                    <p class="description">An in-depth analysis of an extensive dataset (230K+ records) was performed, utilizing unsupervised machine learning to optimize clustering and inform data management strategies. Designed and implemented a linear regression model to predict student performance based on study hours, achieving an accuracy of 85%. </p>
+                                    <p class="skills">Skills : <span>Python</span> <span>Scikit-Learn</span> <span>Numpy</span> <span>Pandas</span> <span>Git</span></p>
+                                </div>
+                                <hr>
+                                <div class="work-item">
+                                    <h3>June 2021 - July 2021</h3>
+                                    <div class="position">
+                                        <span class="position-title">Data Science Intern</span>
+                                    </div>
+                                    <p><span class="company">Technocolabs Softwares</span> <span class="location">Remote</span></p>
+									<p class="description">Statistical Data Analysis: Performed comprehensive data analyses on large customer datasets (millions of records), identifying patterns and anomalies to derive actionable insights for fintech solutions.</p>
+									<p class="description">Machine Learning Task: Designed and implemented robust machine learning models—artificial neural networks and decision trees—to predict customer loan repayment capabilities. Ensured scalability and adaptability of these models to accommodate changing data dynamics.</p>
+									<p class="description">Pipeline Management: Led the orchestration of an end-to-end data streaming pipeline, managing all stages from data processing to model deployment. Focused on detailed feature engineering to enhance model performance and efficacy in real-world applications.</p>
+									<p class="skills">Skills : <span>Python</span> <span>Flask</span> <span>Scikit-Learn</span> <span>TensorFlow</span> <span>Pandas</span> <span>Numpy</span> <span>Git</span></p>
+                                </div>
+                            </div>
+                        </article>
+
+						<!-- Education -->
+                        <article id="education">
+                            <h2 class="major">Education</h2>
+                            <div class="education-container">
+                                <div class="education-item">
+                                    <h3>2022-2024</h4>
+                                    <div class="degree">
+                                        <span class="degree-title"><b>Master of Science</b> in <b>Information Systems</b></span>
+                                        <span class="cgpa">gpa - <span class="cgpa-number">3.95/4</span></span>
+                                    </div>
+                                    <p><span class="university">Northeastern University</span> <span class="location">Boston, MA</span></p>
+                                    <p class="relevant-coursework">Relevant Coursework : data science engineering methods & tools, application engineering & development, big data systems & intelligence analytics, data management and database design, high parallel machine learning & computing, advances in data science architecture</p>
+                                </div>
+                                <hr>
+                                <div class="education-item">
+                                    <h3>2018-2022</h3>
+                                    <div class="degree">
+                                        <span class="degree-title"><b>Bachelor of Engineering</b> in <b>Computer Science</b> & <b>Engineering</b></span>
+                                        <span class="cgpa">gpa - <span class="cgpa-number">8.86/10</span></span>
+                                    </div>
+                                    <p><span class="university">Rajalakshmi Engineering College</span> <span class="location">Chennai, India</span></p>
+                                    <p class="relevant-coursework">Relevant Coursework : business intelligence and applications, data analytics, data warehousing and data mining, database management systems, advanced programming logic, internet programming</p>
+                                </div>
+                            </div>
+                        </article>
+
+						<!-- Projects -->
+						<article id="projects">
+							<h2 class="major">Projects</h2>
+							<div class="projects-container">
+								<div class="project">
+									<img src="images/parallel.png" alt="Parallelisation in Retinal Lesion Classification">
+									<h3 style="font-size: 0.9rem;">Parallelisation in Retinal Lesion Classification</h3>
+									<p style="text-align: justify; font-size: 0.75rem; color: #ffffffad;">Speeding up retinal lesion classification by applying GPU-parallelization techniques on deep learning models.</p>
+									<a href="https://github.com/Lokesh-Balamurugan/parallelisation-in-retinal-lesion-classification" target="_blank" class="read-more">Read more &#10132;</a>
+								</div>
+								<div class="project">
+									<img src="images/What-Is-Named-Entity-Recognition-NER-and-What-Can-You-Do-with-It.jpeg" alt="NER and POS Tagging">
+									<h3 style="font-size: 0.9rem;">NER and POS Tagging</h3>
+									<p style="text-align: justify; font-size: 0.75rem; color: #ffffffad;">Enhancing text analysis with Named Entity Recognition and Part-of-Speech tagging using machine learning models.</p>
+									<a href="https://github.com/Lokesh-Balamurugan/ner-pos-tagging" target="_blank" class="read-more">Read more &#10132;</a>
+								</div>
+								<div class="project">
+									<img src="images/movie_rec.png" alt="Movie Recommendation System">
+									<h3 style="font-size: 0.9rem;">Movie Recommendation System</h3>
+									<p style="text-align: justify; font-size: 0.75rem; color: #ffffffad;">Personalized movie recommendations using memory-based and model-based collaborative filtering.</p>
+									<a href="https://github.com/Lokesh-Balamurugan/movie-recommendation-system" target="_blank" class="read-more">Read more &#10132;</a>
+								</div>
+								<div class="project">
+									<img src="images/hero-image.webp" alt="LetterBoxd Web Scraping">
+									<h3 style="font-size: 0.9rem;">LetterBoxd Web Scraping</h3>
+									<p style="text-align: justify; font-size: 0.75rem; color: #ffffffad;">Extracting movie data from LetterBoxd and IMDb to create a comprehensive dataset for analysis.</p>
+									<a href="https://github.com/Lokesh-Balamurugan/LetterBoxdWebScraping" target="_blank" class="read-more">Read more &#10132;</a>
+								</div>
+								<div class="project">
+									<img src="images/bank_management.jpg" alt="Bank Management System">
+									<h3 style="font-size: 0.9rem;">Bank Management System</h3>
+									<p style="text-align: justify; font-size: 0.75rem; color: #ffffffad;">Building a robust Oracle based database system to manage bank operations efficiently.</p>
+									<a href="https://github.com/Lokesh-Balamurugan/BankManagementSystem" target="_blank" class="read-more">Read more &#10132;</a>
+								</div>
+								<div class="project">
+									<img src="images/issues.webp" alt="AIssueFlow">
+									<h3 style="font-size: 0.9rem;">AIssueFlow</h3>
+									<p style="text-align: justify; font-size: 0.75rem; color: #ffffffad;">Reinventing GitHub issue management with AI for streamlined workflows using BERT, Milvus, and Snowflake.</p>
+									<a href="https://github.com/Lokesh-Balamurugan/AIssueFlow" target="_blank" class="read-more">Read more &#10132;</a>
+								</div>
+								<div class="project">
+									<img src="images/meeting_minds.png" alt="Meeting Minds">
+									<h3 style="font-size: 0.9rem;">Meeting Minds</h3>
+									<p style="text-align: justify; font-size: 0.75rem; color: #ffffffad;">Processing and transcribing audio files with Whisper API, Apache Airflow, and GPT-3.5 Turbo interactions.</p>
+									<a href="https://github.com/Lokesh-Balamurugan/Meeting-Minds" target="_blank" class="read-more">Read more &#10132;</a>
+								</div>
+								<div class="project">
+									<img src="images/aerodash.gif" alt="Aero Dash">
+									<h3 style="font-size: 0.9rem;">Aero Dash</h3>
+									<p style="text-align: justify; font-size: 0.75rem; color: #ffffffad;">Extracting and managing NEXRAD and GOES-18 satellite metadata with Airflow, S3 Buckets, and interactive user access.</p>
+									<a href="https://github.com/Lokesh-Balamurugan/Aero-Dash" target="_blank" class="read-more">Read more &#10132;</a>
+								</div>
+								<div class="project">
+									<img src="images/ddos.png" alt="DDoS Attack Detection">
+									<h3 style="font-size: 0.9rem;">DDoS Attack Detection</h3>
+									<p style="text-align: justify; font-size: 0.75rem; color: #ffffffad;">Detecting DDoS attacks with machine learning algorithms, achieving over 97% accuracy.</p>
+									<a href="https://github.com/Lokesh-Balamurugan/DDoS-Attack-Detection" target="_blank" class="read-more">Read more &#10132;</a>
+								</div>
+								<div class="project">
+									<img src="images/pulmonary_lesions.png" alt="Deep Learning Models For Diagnosing Pulmonary Lesions">
+									<h3 style="font-size: 0.9rem;">Deep Learning Models For Diagnosing Pulmonary Lesions</h3>
+									<p style="text-align: justify; font-size: 0.75rem; color: #ffffffad;">Applying deep learning to diagnose pulmonary lesions with up to 90% accuracy.</p>
+									<a href="https://github.com/Lokesh-Balamurugan/Deep-Learning-Models-For-Diagnosing-Pulmonary-Lesions" target="_blank" class="read-more">Read more &#10132;</a>
+								</div>
+								<div class="project">
+									<img src="images/stock-photo-human-respiratory-system-lungs-anatomy.jpeg" alt="Tuberculosis Diagnosis using Deep Learning">
+									<h3 style="font-size: 0.9rem;">Tuberculosis Diagnosis using Deep Learning</h3>
+									<p style="text-align: justify; font-size: 0.75rem; color: #ffffffad;">Leveraging deep learning models for accurate and early diagnosis of tuberculosis.</p>
+									<a href="https://github.com/Lokesh-Balamurugan/Tuberculosis-Diagnosis-using-Deep-Learning" target="_blank" class="read-more">Read more &#10132;</a>
+								</div>
+								<div class="project">
+									<img src="images/stocks.jpg" alt="Stock Prediction">
+									<h3 style="font-size: 0.9rem;">Stock Prediction</h3>
+									<p style="text-align: justify; font-size: 0.75rem; color: #ffffffad;">Predicting stock market trends using artificial neural networks and historical data.</p>
+									<a href="https://github.com/Lokesh-Balamurugan/Stock-Prediction" target="_blank" class="read-more">Read more &#10132;</a>
+								</div>
+							</div>
+						</article>
+
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<p style="text-align: justify; color: #ffffffad;">Excited about collaborating on innovative projects or discussing career opportunities? Let’s make it happen! You can <strong>call me directly</strong> or <strong>send a holocron (email)</strong> to start a conversation. Feel free to also connect with me on my social media platforms—I’m always open to hearing interesting ideas, engaging in discussions, and making new connections!</p>
+								<ul class="actions">
+										<li><a href="tel:+13125398306" class="button primary">Call Me</a></li>
+										<li><a href="mailto:lokesh2000.balamurugan@gmail.com" class="button">Email Me</a></li>
+								</ul>
+								<ul class="icons">
+									<li><a href="https://linkedin.com/in/lokeshvb" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/Lokesh-Balamurugan" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+									<li><a href="https://twitter.com/daLastSkywalk3r" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+									<li><a href="https://instagram.com/the_1ast_jedi_" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+								</ul>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Portfolio@Loki.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
