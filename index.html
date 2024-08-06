@@ -194,7 +194,7 @@
 				color: #0056b3;
 			}
 		/* Media Queries */
-		/* iPhone 14 Pro */
+            /* iPhone 14 Pro */
             @media (width: 393px) {
                 .profile-container img {
                     width: 130px; /* Adjust size for iPhone 14 Pro */
@@ -235,7 +235,7 @@
                     margin-top: 0px; /* Adjust as needed */
                 }
             }
-		/* General mobile styles (for larger screens like iPhone 14 Pro Max and other devices) */
+		    /* General mobile styles (for larger screens like iPhone 14 Pro Max and other devices) */
             @media (width: 430px) {
                 .profile-container img {
                     width: 150px; /* Adjust size for smaller screens */
@@ -248,6 +248,26 @@
                     text-align: justify;
                     margin-top: 15px; /* Move the text slightly down */
                     font-size: 0.8rem;
+                }
+                .aboutme-text {
+                    text-align: justify;
+                    margin-top: 0px; /* Space below the image */
+                }
+            }
+            /* Other mobile devices */
+            @media (max-width: 767px) {
+                .profile-container {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+                .profile-container img {
+                    width: 150px; /* Default size for larger mobile screens */
+                    margin-bottom: 20px; /* Adjust spacing as needed */
+                }
+                .profile-container .text {
+                    margin-top: 0px;
+                    font-size: 1rem;
                 }
                 .aboutme-text {
                     text-align: justify;
