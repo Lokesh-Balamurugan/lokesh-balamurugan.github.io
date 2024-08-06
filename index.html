@@ -17,7 +17,7 @@
                 text-align: justify;
             }
             .profile-container img {
-                width: 125px; /* Adjust the size as needed */
+                width: 150px; /* Adjust the size as needed */
                 margin-right: 20px; /* Adjust the spacing as needed */
             }
             .profile-container .text {
@@ -196,15 +196,20 @@
 		/* Media Queries */
             @media (max-width: 768px) {
                 .profile-container img {
-                    width: 100px; /* Adjust size for smaller screens */
+                    width: 150px; /* Adjust size for smaller screens */
                 }
+		.profile-container .text {
+		flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: justify;
+                margin-top: 2px; /* Move the text slightly down */
+		font-size: 0.9rem
+		}
 		.aboutme-text {
                     text-align: justify;
                     margin-top: 2px; /* Space below the image */
-			font-size: 0.9rem
-	        }
-	        .education-container {
-		    margin-top: 2px;
 	        }
             }
         </style>
